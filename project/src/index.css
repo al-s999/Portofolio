@@ -1,0 +1,594 @@
+/* Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #0f0f0f;
+    color: #f5f5f5;
+    line-height: 1.6;
+}
+
+/* ================ Animation Styles ================ */
+.fade-in {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.slide-in-left {
+    opacity: 0;
+    transform: translateX(-50px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.slide-in-left.visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.slide-in-right {
+    opacity: 0;
+    transform: translateX(50px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.slide-in-right.visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.scale-in {
+    opacity: 0;
+    transform: scale(0.8);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.scale-in.visible {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.rotate-in {
+    opacity: 0;
+    transform: rotateY(90deg);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.rotate-in.visible {
+    opacity: 1;
+    transform: rotateY(0);
+}
+
+/* Particles Animation */
+.particle {
+    opacity: 0;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.5);
+    animation: particleAnim 3s ease-in-out infinite;
+    border-radius: 100%;
+}
+
+@keyframes particleAnim {
+    0% {
+        opacity: 0;
+        transform: translateY(-0%);
+    }
+    25% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(-1500%);
+    }
+}
+
+@-webkit-keyframes particleAnim {
+    0% {
+        opacity: 0;
+        transform: translateY(-0%);
+    }
+    15% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(-1500%);
+    }
+}
+
+/* Stagger animations for multiple elements */
+.stagger-animation > * {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.stagger-animation > *.visible:nth-child(1) {
+    transition-delay: 0.1s;
+}
+
+.stagger-animation > *.visible:nth-child(2) {
+    transition-delay: 0.2s;
+}
+
+.stagger-animation > *.visible:nth-child(3) {
+    transition-delay: 0.3s;
+}
+
+.stagger-animation > *.visible:nth-child(4) {
+    transition-delay: 0.4s;
+}
+
+.stagger-animation > *.visible:nth-child(n+5) {
+    transition-delay: 0.5s;
+}
+
+.stagger-animation > *.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* ================ Layout Components ================ */
+
+/* Header Styling */
+.header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px 50px;
+    background-color: rgba(15, 15, 15, 0.95);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.header h1 {
+    font-weight: 700;
+    font-size: 1.8rem;
+    background: linear-gradient(45deg, #ddd, #fff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    letter-spacing: 1px;
+}
+
+.header a {
+    color: #aaa;
+    text-decoration: none;
+    margin-left: 25px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    position: relative;
+}
+
+.header a:hover {
+    color: #fff;
+    transform: translateY(-3px);
+}
+
+.header a::before {
+    position: absolute;
+    content: "";
+    bottom: -3px;
+    left: 50%;
+    width: 0%;
+    height: 3px;
+    background-color: rgb(255, 255, 255);
+    transition: 0.4s ease;
+    transform: translateX(-50%);
+}
+
+.header a:hover::before {
+    width: 100%;
+}
+
+/* Title Section */
+.title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 150px 0;
+    height: 400px;
+    background: linear-gradient(135deg, #111, #222);
+    position: relative;
+    overflow: hidden;
+}
+
+.title h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    font-weight: 300;
+    text-align: center;
+}
+
+.title h2:nth-child(2) {
+    font-weight: 700;
+    background: linear-gradient(45deg, #ddd, #fff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.social-links {
+    margin-top: 20px;
+    text-align: center;
+    width: 100%;
+}
+
+.social-links a {
+    display: inline-block;
+    margin: 0 15px;
+    color: #aaa;
+    font-size: 2.5rem;
+    transition: all 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #fff;
+    transform: translateY(-5px);
+}
+
+/* ================ Projects Section ================ */
+.main_container_project {
+    max-width: 1700px;
+    margin: 50px auto;
+    padding: 20px;
+    background: rgba(80, 80, 80, 0.7);
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    transition: all 0.5s ease;
+}
+
+/* Default grid view */
+.index_project {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+    transition: all 0.5s ease;
+}
+
+div.index_project div.fade-in.visible button{
+    width: 100%;
+    height: 30px;
+    
+} 
+
+.project {
+    background: #1a1a1a;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.project:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
+}
+
+.project h3 {
+    padding: 15px;
+    font-size: 1.5rem;
+    text-align: center;
+    background: linear-gradient(45deg, #111, #333);
+    color: #fff;
+}
+
+.project img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+}
+
+.project p {
+    padding: 15px;
+    color: #ddd;
+    font-size: 0.95rem;
+}
+
+.project a {
+    display: block;
+    margin: 0 15px 15px;
+    padding: 10px 20px;
+    background: linear-gradient(45deg, #333, #555);
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    font-weight: 500;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+.project a:hover {
+    background: linear-gradient(45deg, #555, #777);
+    transform: translateY(-3px);
+}
+
+/* ================ Detail View Layout ================ */
+.detail-view {
+    display: flex;
+    flex-direction: row;
+    height: auto;
+    min-height: 600px;
+    
+}
+
+.detail-view .sidebar {
+    width: 300px;
+    flex-shrink: 0;
+    background: rgba(25, 25, 25, 0.8);
+    padding: 20px;
+    border-radius: 10px 0 0 10px;
+    overflow-y: auto;
+    max-height: 1200px;
+    border-right: 1px solid #333;
+}
+
+.detail-view .main-content {
+    flex-grow: 1;
+    padding: 30px;
+    background: rgba(30, 30, 30, 0.7);
+    border-radius: 0 10px 10px 0;
+    overflow-y: auto;
+}
+
+.sidebar-project {
+    padding: 15px;
+    margin-bottom: 15px;
+    background: #1a1a1a;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.sidebar-project:hover {
+    background: #252525;
+    transform: translateX(5px);
+}
+
+.sidebar-project h4 {
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+    color: #ddd;
+}
+
+.sidebar-project img {
+    width: 100%;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.sidebar-project.active {
+    background: linear-gradient(90deg, #333, #252525);
+    border-left: 3px solid #fff;
+}
+
+.back-to-grid {
+    display: inline-block;
+    margin: 20px;
+    padding: 8px 15px;
+    background: linear-gradient(45deg, #222, #444);
+    color: #ddd;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    height: 60px;
+}
+
+.back-to-grid:hover {
+    background: linear-gradient(45deg, #333, #555);
+    transform: translateY(-2px);
+    color: #fff;
+}
+
+/* ================ Detailed Project Content ================ */
+.project-detail {
+    animation: fadeIn 0.5s ease;
+}
+
+.project-detail h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #444;
+    padding-bottom: 15px;
+    background: linear-gradient(45deg, #ddd, #fff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Update to the featured image in project detail view */
+.project-detail .featured-image {
+    width: 100%;
+    height: auto; /* Changed from fixed 300px to auto */
+    max-height: 500px; /* Added max-height for very large images */
+    object-fit: contain; /* Changed from 'cover' to 'contain' to show entire image */
+    border-radius: 10px;
+    margin-bottom: 25px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    background-color: #111; /* Dark background to make lighter images visible */
+    padding: 10px; /* Adding padding around the image */
+}
+
+/* Adding lightbox functionality for images */
+.project-detail .featured-image:hover {
+    cursor: pointer;
+    transform: scale(1.02);
+    transition: transform 0.3s ease;
+}
+
+/* Add responsiveness for different screen sizes */
+@media (max-width: 768px) {
+    .project-detail .featured-image {
+        max-height: 400px;
+    }
+}
+
+@media (max-width: 480px) {
+    .project-detail .featured-image {
+        max-height: 300px;
+    }
+}
+
+.project-detail .project-description {
+    margin-bottom: 25px;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #ccc;
+}
+
+.project-detail .tech-stack {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+.project-detail .tech-item {
+    background: #333;
+    color: #ddd;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+}
+
+.project-detail .visit-btn {
+    display: inline-block;
+    padding: 12px 25px;
+    background: linear-gradient(45deg, #444, #666);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-top: 10px;
+    transition: all 0.3s ease;
+}
+
+.project-detail .visit-btn:hover {
+    background: linear-gradient(45deg, #555, #777);
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Hide elements when in detailed view */
+.hidden {
+    display: none;
+}
+
+/* ================ Footer ================ */
+footer {
+    background: #0a0a0a;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 -5px 15px rgba(0, 0, 0, 0.3);
+    margin-top: 50px;
+}
+
+footer .text {
+    color: #aaa;
+    font-size: 0.9rem;
+}
+
+footer .text a {
+    color: #ddd;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    font-weight: 500;
+}
+
+footer .text a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+/* ================ Responsive Adjustments ================ */
+@media (max-width: 900px) {
+    .detail-view {
+        flex-direction: column;
+    }
+    
+    .detail-view .sidebar {
+        width: 100%;
+        max-height: 300px;
+        border-radius: 10px 10px 0 0;
+        border-right: none;
+        border-bottom: 1px solid #333;
+    }
+    
+    .detail-view .main-content {
+        border-radius: 0 0 10px 10px;
+    }
+    
+    .sidebar-project {
+        display: inline-block;
+        width: calc(50% - 10px);
+        margin-right: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .index_project {
+        grid-template-columns: 1fr;
+    }
+    
+    .title h2 {
+        font-size: 2.5rem;
+    }
+    
+    .header {
+        flex-direction: column;
+        padding: 15px;
+    }
+    
+    .header h1 {
+        margin-bottom: 15px;
+    }
+    
+    .header a {
+        margin: 5px 15px;
+    }
+    
+    .project-detail h2 {
+        font-size: 2rem;
+    }
+    
+    .sidebar-project {
+        width: 100%;
+        margin-right: 0;
+    }
+}
