@@ -1,0 +1,34 @@
+My full name is Ahmaad Rosyid Alfualdi, but I am usually called Rosyid or Aldi. Currently, I am a student at SMK Negeri 1 Dlanngu, majoring in Software Engineering (RPL). In addition to studying at school, I also study independently through AI (Artificial Intelligence), w3school.com, YouTube, hackerrank.com, and itbox.id. I also participated in a 5-Day Gen AI Intensive Course with Google through a collaboration with Kaggle.
+
+I am someone who aims to succeed in the end, so even if I fail many times, I will keep trying until I succeed. However, success is not my ultimate goal, so I will not celebrate it and will continue to move forward. I always rely on myself for activities I can do independently, but I can work as part of a team by listening to others' opinions, discussing ideas, and collaborating.
+
+I enjoy being around people as long as it's not overwhelming, but I also need time alone. I feel comfortable in a busy environment and interacting with many people, but I also value moments where I can enjoy my own time, especially after social activities. So I am a flexible person who can adapt well to various situations. I am also a good listener; I can understand the person I am talking to, so I often remain silent and listen.
+
+I have skills in desktop web development, Machine Learning, Data Science, and Generative AI. My programming languages are Python, R, HTML, CSS, JavaScript, and PHP. For frameworks, I use Laravel and Flask. Currently, I do not have any real-world work experience, but I have several projects I have created.
+
+Some of the projects I have created include:
+1. Web RNG (Random Number Generation)	
+I wanted to create a way to determine groups using a truly random algorithm that cannot be influenced or manipulated. I built it using HTML, CSS, and JavaScript. Users input the group name and number of groups into a text field, then click the submit button. The text input values are converted into JSON and passed to a JavaScript function. Using these two parameters, the function generates the number of groups and the name of each group.
+
+2. MythicalCreature Web
+I want to understand how Template Inheritance works. For this, I created a website using the Laravel framework to demonstrate Template Inheritance across various mythological stories. The website features several stories whose content aligns with their respective titles.
+
+3. Biodata Form Web
+This is a task I completed using HTML, CSS, and JavaScript to create a form and display its output. On this website, after filling in all the text inputs and clicking the submit button, the text input values are converted to JSON, stored in a JavaScript function, and then displayed in a table format.
+
+4. Login and Register Website
+I created this to learn how to build a login and registration system. This website combines two elements: the background and the main element (container), with changes made to the main element, as well as the registration and login processes. For this website, I used HTML, CSS, and JavaScript. 
+
+For projects like Generative AI (GenAI), Machine Learning, and Data Science, as well as the files I use for learning, everything is available on my Kaggle and GitHub websites.
+
+Through learning on Hacker Rank and ITbox, I obtained certificates after completing the courses and tests.  
+Among them:  
+1. Python Basic Certificate from Hacker Rank  
+2. Data Science Course Levels: Basic, Intermediate, and Advanced from ITbox
+
+My WhatsApp link: https://api.whatsapp.com/send/?phone=6288292081326&text&type=phone_number&app_absent=0
+My Instagram link: https://www.instagram.com/zarsyd.al/  
+Link to send a message to my email: mailto:ahmadrosyidalfualdi@gmail.com  
+My Kaggle profile: https://www.kaggle.com/ahmadrosyidalfualdi/code
+My GitHub profile: https://github.com/al-s999?tab=repositories
+My LinkedIn profile: https://www.linkedin.com/in/ahmad-rosyid-al-fualdi-b04234354/
