@@ -9,11 +9,7 @@ const projectsData = [
         summary: "On this website, I created it with Laravel for the backend and used a technique called page templating to make it easy for users to use and to load pages quickly.",
         description: "This website, titled 'CATATAN LEGENDA: MAKHLUK MITOLOGI' (Legendary Notes: Mythological Creatures), was developed as a personal project to deepen my understanding of how template inheritance works within the Laravel backend framework. My goal was to create a platform that showcases various mythological creatures from different cultures, each accompanied by its own story. \n\n On this website, I created it with Laravel for the backend and used a technique called page templating to make it easy for users to use and to load pages quickly. On the front end, I still use standard web programming languages (HTML, CSS, JavaScript). The site features a clean and organized layout, displaying several mythical creatures such as Chimera, Cerberus, Hydra, Phoenix, Kelpie, and Minotaur, each presented with an image and a brief description. This project effectively demonstrates the application of template inheritance in providing a consistent structure while allowing for dynamic content specific to each mythological story.",
         technologies: ["HTML5", "CSS3", "JavaScript", "Responsive Design", "Laravel 12", "Template Inheritance"],
-<<<<<<< HEAD
         websiteUrl: "https://github.com/al-s999/MythicalCreature"
-=======
-        websiteUrl: "#" // Ganti dengan link asli jika ada
->>>>>>> bbf62784f5ccdec56d4393f3285d5937bb999312
     },
     {
         id: "project2",
@@ -22,11 +18,7 @@ const projectsData = [
         summary: "On this website, I created a CRUD website with standard programming languages.",
         description: "My primary objective was to learn how to implement full CRUD (Create, Read, Update, Delete) operations within a web application. \n\n The website, as shown in the image, features a 'Biodata' form where users can input personal information such as Name, Address, Place of Birth, Date of Birth, Gender, Religion, and Hobby. Upon submission, this data can be created, viewed, edited, and deleted. For the backend, I utilized Javascript to handle the data processing and database interactions, while the frontend was built using standard web programming languages (HTML, CSS, JavaScript).",
         technologies: ["HTML5", "CSS3", "JavaScript", "CRUD Operations"],
-<<<<<<< HEAD
         websiteUrl: "https://github.com/al-s999/biodata-form"
-=======
-        websiteUrl: "#"
->>>>>>> bbf62784f5ccdec56d4393f3285d5937bb999312
     },
     {
         id: "project3",
@@ -35,11 +27,7 @@ const projectsData = [
         summary: "On this website, I create a Authentificaton website using Laravel and React.js.",
         description: "This project is a web application built to explore and implement authentication systems, utilizing Laravel for the backend and React for the frontend. The image provided showcases the 'Sign In' and 'Sign Up' interfaces, indicating a core focus on user management. On the left, users can sign in using their email and password, or through social login options such as Google, Facebook, and GitHub, demonstrating the implementation of OAuth for external authentication. The 'Forgot Your Password?' link suggests a robust password recovery mechanism is also in place. On the right, the 'Hello, Friend!' section encourages new users to register, highlighting the full access they gain to site features upon signing up. This architectural choice, combining Laravel's powerful backend capabilities with React's dynamic and responsive frontend, allows for a comprehensive study of secure user authentication flows, including registration, login, password management, and social logins. The project serves as a practical learning tool to understand the intricacies of token-based authentication, session management, and data security in a full-stack environment.",
         technologies: ["React.js", "Laravel 12"],
-<<<<<<< HEAD
         websiteUrl: "https://github.com/al-s999/Authentification-page"
-=======
-        websiteUrl: "#"
->>>>>>> bbf62784f5ccdec56d4393f3285d5937bb999312
     },
 ];
 
