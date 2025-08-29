@@ -100,7 +100,7 @@ function ProjectDetail({ project, onGoBack }) {
                 <div className="tech-stack">
                     {project.technologies.map(tech => <span key={tech} className="tech-item">{tech}</span>)}
                 </div>
-                <a href={project.websiteUrl} className="visit-btn" target="_blank" rel="noopener noreferrer">Visit Website</a>
+                <a href={project.websiteUrl} className="visit-btn" target="_blank" rel="noopener noreferrer">Go to the GitHub project</a>
             </div>
         </div>
     );
