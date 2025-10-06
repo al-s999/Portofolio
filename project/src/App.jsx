@@ -15,7 +15,7 @@ function App() {
         <MainContainer />
       </main>
       <Footer />
-      <a href="http://localhost:5000" target="_blank" rel="noopener noreferrer">
+      <a href="http://localhost:8000" target="_blank" rel="noopener noreferrer">
         <button className="chat-button"><i className="far fa-comment"></i></button>
       </a>
     </>
