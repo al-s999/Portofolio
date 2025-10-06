@@ -15,6 +15,7 @@ function App() {
         <MainContainer />
       </main>
       <Footer />
+      <a href="../../ai_chatbot/templates/chat.html"><button className="chat-button"><i className="far fa-comment"></i></button></a>
     </>
   )
 }
