@@ -22,7 +22,9 @@ function App() {
         <Contact />
       </main>
       <Footer />
-      <a href="../../ai_chatbot/templates/chat.html"><button className="chat-button"><i className="far fa-comment"></i></button></a>
+      <a href="http://localhost:5000" target="_blank" rel="noopener noreferrer">
+        <button className="chat-button"><i className="far fa-comment"></i></button>
+      </a>
     </>
   )
 }
