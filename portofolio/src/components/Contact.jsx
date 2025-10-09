@@ -11,9 +11,9 @@ function Resume() {
                     <div className="topic"  data-aos="fade-right" data-aos-duration="1500" data-aos-delay="200">Have Any Project</div>
                     <div className="con">
                         <ul>
-                            <a href=""><li><i className="fab fa-whatsapp whatsapp-icon"></i><p>+6288292081326</p></li></a>
-                            <a href=""><li><i className="fab fa-instagram instagram-icon"></i><p>Zarsyd.Al</p></li></a>
-                            <a href=""><li><i className="fas fa-envelope email-icon"></i><p>ahmadrosyidalfualdi@gmail.com</p></li></a>
+                            <a href="https://api.whatsapp.com/send/?phone=6288292081326&text&type=phone_number&app_absent=0"><li><i className="fab fa-whatsapp whatsapp-icon"></i><p>+6288292081326</p></li></a>
+                            <a href="https://ig.me/m/zarsyd.al"><li><i className="fab fa-instagram instagram-icon"></i><p>Zarsyd.Al</p></li></a>
+                            <a href="mailto:ahmadrosyidalfualdi@gmail.com"><li><i className="fas fa-envelope email-icon"></i><p>ahmadrosyidalfualdi@gmail.com</p></li></a>
                         </ul>
                     <div className="button" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="400">
                         <a href="https://api.whatsapp.com/send/?phone=6288292081326&text&type=phone_number&app_absent=0" target="_blank"><button>Let's Chat</button></a>

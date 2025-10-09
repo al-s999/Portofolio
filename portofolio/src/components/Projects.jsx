@@ -19,6 +19,16 @@ const projectData = [
         img: authWebsiteImg,
         title: 'Authentification Website',
         description: 'Website for signing up and signing in'
+    },
+    {
+        img: authWebsiteImg,
+        title: 'Model Mental Health Assistant',
+        description: 'A mental health assistant powered by Gemini AI'
+    },
+    {
+        img: authWebsiteImg,
+        title: 'Model to Classification Phising Email',
+        description: 'A model to classify phishing emails using machine learning'
     }
 ]
 
