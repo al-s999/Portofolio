@@ -29,6 +29,24 @@ const projectsData = [
         technologies: ["React.js", "Laravel 12"],
         websiteUrl: "https://github.com/al-s999/Authentification-page"
     },
+    {
+        id: "project4",
+        title: "Model Mental Health Assistant",
+        image: "ex/Cuplikan layar 2025-07-15 063132.png",
+        summary: "A mental health assistant powered by Gemini AI.",
+        description: "This project is a mental health assistant powered by Gemini AI, designed to provide users with support and resources for mental well-being. The application utilizes advanced AI capabilities to offer personalized assistance, including mood tracking, coping strategies, and access to mental health resources. The interface is user-friendly, allowing individuals to easily navigate through various features such as journaling prompts, guided meditations, and educational content on mental health topics. The goal of this project is to create a supportive environment where users can feel comfortable seeking help and improving their mental health.",
+        technologies: ["Gemini AI", "React.js", "Node.js"],
+        websiteUrl: ""
+    },
+    {
+        id: "project5",
+        title: "Model to Classification Phishing Email",
+        image: "ex/Cuplikan layar 2025-07-15 063132.png",
+        summary: "A model to classify phishing emails using machine learning.",
+        description: "This project focuses on developing a machine learning model to classify phishing emails, aiming to enhance email security and protect users from potential threats. The model is trained on a dataset of emails, utilizing features such as email headers, content analysis, and metadata to identify patterns indicative of phishing attempts. The application provides a user-friendly interface where users can input email data for analysis, and the model outputs a classification indicating whether the email is likely to be phishing or legitimate. This project serves as a practical application of machine learning techniques in cybersecurity, demonstrating the effectiveness of automated systems in detecting and mitigating phishing attacks.",
+        technologies: ["Machine Learning", "Python", "Scikit-learn"],
+        websiteUrl: ""
+    }
 ];
 
 // Komponen untuk menampilkan grid semua proyek
