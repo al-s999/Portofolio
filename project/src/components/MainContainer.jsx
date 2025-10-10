@@ -23,7 +23,7 @@ const projectsData = [
     {
         id: "project3",
         title: "Authentication Website",
-        image: "ex/Cuplikan layar 2025-07-15 063132.png",
+        image: "ex/Cuplikan layar 2025-10-09 210947.png",
         summary: "On this website, I create a Authentificaton website using Laravel and React.js.",
         description: "This project is a web application built to explore and implement authentication systems, utilizing Laravel for the backend and React for the frontend. The image provided showcases the 'Sign In' and 'Sign Up' interfaces, indicating a core focus on user management. On the left, users can sign in using their email and password, or through social login options such as Google, Facebook, and GitHub, demonstrating the implementation of OAuth for external authentication. The 'Forgot Your Password?' link suggests a robust password recovery mechanism is also in place. On the right, the 'Hello, Friend!' section encourages new users to register, highlighting the full access they gain to site features upon signing up. This architectural choice, combining Laravel's powerful backend capabilities with React's dynamic and responsive frontend, allows for a comprehensive study of secure user authentication flows, including registration, login, password management, and social logins. The project serves as a practical learning tool to understand the intricacies of token-based authentication, session management, and data security in a full-stack environment.",
         technologies: ["React.js", "Laravel 12"],
@@ -31,21 +31,19 @@ const projectsData = [
     },
     {
         id: "project4",
-        title: "Model Mental Health Assistant",
-        image: "ex/Cuplikan layar 2025-07-15 063132.png",
-        summary: "A mental health assistant powered by Gemini AI.",
-        description: "This project is a mental health assistant powered by Gemini AI, designed to provide users with support and resources for mental well-being. The application utilizes advanced AI capabilities to offer personalized assistance, including mood tracking, coping strategies, and access to mental health resources. The interface is user-friendly, allowing individuals to easily navigate through various features such as journaling prompts, guided meditations, and educational content on mental health topics. The goal of this project is to create a supportive environment where users can feel comfortable seeking help and improving their mental health.",
-        technologies: ["Gemini AI", "React.js", "Node.js"],
-        websiteUrl: ""
+        title: "Phishing Email Classification",
+        image: "ex/Cuplikan layar 2025-10-09 210947.png",
+        summary: "A prototype model to classify whether an email is phishing or legitimate using fine-tuned machine learning techniques.",
+        description: "This project is a prototype built on Kaggle to classify emails as phishing or non-phishing using a fine-tuned model. It focuses on data preprocessing, feature extraction, and model training using Python libraries such as Pandas and NumPy. The model aims to enhance cybersecurity by detecting suspicious email patterns and preventing phishing attacks. The implementation demonstrates an end-to-end machine learning pipeline, including data cleaning, visualization, and model evaluation. This notebook serves as a foundation for further improvements in real-world email security applications.",
+        technologies: ["Python", "Kaggle", "Machine Learning"]
     },
     {
         id: "project5",
-        title: "Model to Classification Phishing Email",
-        image: "ex/Cuplikan layar 2025-07-15 063132.png",
-        summary: "A model to classify phishing emails using machine learning.",
-        description: "This project focuses on developing a machine learning model to classify phishing emails, aiming to enhance email security and protect users from potential threats. The model is trained on a dataset of emails, utilizing features such as email headers, content analysis, and metadata to identify patterns indicative of phishing attempts. The application provides a user-friendly interface where users can input email data for analysis, and the model outputs a classification indicating whether the email is likely to be phishing or legitimate. This project serves as a practical application of machine learning techniques in cybersecurity, demonstrating the effectiveness of automated systems in detecting and mitigating phishing attacks.",
-        technologies: ["Machine Learning", "Python", "Scikit-learn"],
-        websiteUrl: ""
+        title: "Mental Health Assistant",
+        image: "ex/Cuplikan layar 2025-10-09 211002.png",
+        summary: "A Gemini-based fine-tuned model that provides empathetic responses to users by learning from psychiatrist-patient conversation datasets.",
+        description: "This project is a prototype AI model created on Kaggle using Python, retrained from the Gemini Flash model with a dataset of psychiatrist-patient dialogues. The main goal is to develop an AI assistant that can respond empathetically to mental health-related queries. It demonstrates fine-tuning techniques for conversational AI to better understand emotional context and deliver supportive replies. The notebook showcases the preparation of datasets, model retraining, and evaluation phases. This project serves as a learning example of applying fine-tuning to enhance AI responses in mental health support scenarios.",
+        technologies: ["Python", "Gemini Flash", "Kaggle", "AI Fine-Tuning"]
     }
 ];
 

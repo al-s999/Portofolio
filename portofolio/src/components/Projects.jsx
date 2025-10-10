@@ -3,6 +3,8 @@ import React from 'react';
 import mythicalCreatureImg from '../assets/ex/MythicalCreature.png';
 import biodataImg from '../assets/ex/biodata.png';
 import authWebsiteImg from '../assets/ex/Cuplikan layar 2025-07-15 063132.png';
+import mentalHealthImg from '../assets/ex/Cuplikan layar 2025-10-09 211002.png';
+import phisingEmailImg from '../assets/ex/Cuplikan layar 2025-10-09 210947.png';
 
 const projectData = [
     {
@@ -21,12 +23,12 @@ const projectData = [
         description: 'Website for signing up and signing in'
     },
     {
-        img: authWebsiteImg,
+        img: mentalHealthImg,
         title: 'Model Mental Health Assistant',
         description: 'A mental health assistant powered by Gemini AI'
     },
     {
-        img: authWebsiteImg,
+        img: phisingEmailImg,
         title: 'Model to Classification Phising Email',
         description: 'A model to classify phishing emails using machine learning'
     }
