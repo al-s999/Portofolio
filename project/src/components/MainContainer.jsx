@@ -23,7 +23,7 @@ const projectsData = [
     {
         id: "project3",
         title: "Authentication Website",
-        image: "ex/Cuplikan layar 2025-10-09 210947.png",
+        image: "ex/Cuplikan layar 2025-07-15 063132.png",
         summary: "On this website, I create a Authentificaton website using Laravel and React.js.",
         description: "This project is a web application built to explore and implement authentication systems, utilizing Laravel for the backend and React for the frontend. The image provided showcases the 'Sign In' and 'Sign Up' interfaces, indicating a core focus on user management. On the left, users can sign in using their email and password, or through social login options such as Google, Facebook, and GitHub, demonstrating the implementation of OAuth for external authentication. The 'Forgot Your Password?' link suggests a robust password recovery mechanism is also in place. On the right, the 'Hello, Friend!' section encourages new users to register, highlighting the full access they gain to site features upon signing up. This architectural choice, combining Laravel's powerful backend capabilities with React's dynamic and responsive frontend, allows for a comprehensive study of secure user authentication flows, including registration, login, password management, and social logins. The project serves as a practical learning tool to understand the intricacies of token-based authentication, session management, and data security in a full-stack environment.",
         technologies: ["React.js", "Laravel 12"],
