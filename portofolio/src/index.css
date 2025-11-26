@@ -531,7 +531,7 @@ body {
     height: 100%;
 }
 
-#pdf-container-1, #pdf-container-2, #pdf-container-3, #pdf-container-4 {
+#pdf-container-1, #pdf-container-2, #pdf-container-3, #pdf-container-4, #pdf-container-5 {
     min-width: 100%;
     display: flex;
     flex-direction: column;
