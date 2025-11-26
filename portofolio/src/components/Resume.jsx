@@ -8,6 +8,7 @@ const certificates = [
     { id: 2, url: 'experience/ITBox-Certificate_Data-Science-Course-Level-Basic_Ahmad-Rosyid-Al-fualdi.pdf', scale: 0.5 },
     { id: 3, url: 'experience/ITBox-Certificate_Data-Science-Course-Level-Intermediate_Ahmad-Rosyid-Al-fualdi.pdf', scale: 0.5 },
     { id: 4, url: 'experience/ITBox-Certificate_Data-Science-Course-Level-Advanced_Ahmad-Rosyid-Al-fualdi.pdf', scale: 0.5 },
+    { id: 5, url: 'experience/Harapan 2 IoT__Ahmad Rosyid Alfualdi.pdf', scale: 0.5},
 ];
 
 function Resume() {
