@@ -512,6 +512,45 @@ body {
     width: 100%;
 }
 
+/* CV Call-to-Action */
+.cv-cta {
+    max-width: 800px;
+    margin: 10px auto 0;
+    display: flex;
+    justify-content: center;
+}
+
+.cv-cta a {
+    text-decoration: none;
+}
+
+.cv-cta-button {
+    background: linear-gradient(45deg, #f0f0f0, #ffffff);
+    color: #1a1a1a;
+    border: 1px solid #e0e0e0;
+    padding: 12px 28px;
+    border-radius: 6px;
+    font-size: 1.05rem;
+    font-weight: 600;
+    letter-spacing: 0.6px;
+    text-transform: uppercase;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
+    transition: all 0.3s ease;
+}
+
+.cv-cta-button:hover {
+    color: #ffffff;
+    transform: translateY(-3px);
+    background: #252222;
+    border-color: #e0e0e0;
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.25);
+}
+
+.cv-cta-button:active {
+    transform: translateY(1px);
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+}
+
 /* Experience section inside resume-item */
 /* Experience Slider Styles */
 .experience-slider-container {
@@ -1303,4 +1342,3 @@ footer .text a:hover {
         padding: 10px 5px;
     }
 }
-

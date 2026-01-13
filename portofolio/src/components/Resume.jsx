@@ -117,7 +117,7 @@ function Resume() {
                                         <img src="logo/javascript-r.svg" alt="JavaScript" />       
                                     </div>
                                     <div className="skill-item">
-                                        <img src="logo/Java_(programming_language)-Logo.wine.svg" alt="Java" />
+                                        <img src="logo/nextjs-icon-svgrepo-com.svg" alt="next Js" />
                                     </div>
                                     <div className="skill-item">
                                         <img src="logo/Laravel-Logo.wine.svg" alt="Laravel" />       
@@ -141,7 +141,7 @@ function Resume() {
                                         <img src="logo/javascript-r.svg" alt="JavaScript" />       
                                     </div>
                                     <div className="skill-item">
-                                        <img src="logo/Java_(programming_language)-Logo.wine.svg" alt="Java" />
+                                        <img src="logo/nextjs-icon-svgrepo-com.svg" alt="Next Js" />
                                     </div>
                                     <div className="skill-item">
                                         <img src="logo/Laravel-Logo.wine.svg" alt="Laravel" />       

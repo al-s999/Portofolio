@@ -44,6 +44,21 @@ const projectsData = [
         summary: "A Gemini-based fine-tuned model that provides empathetic responses to users by learning from psychiatrist-patient conversation datasets.",
         description: "This project is a prototype AI model created on Kaggle using Python, retrained from the Gemini Flash model with a dataset of psychiatrist-patient dialogues. The main goal is to develop an AI assistant that can respond empathetically to mental health-related queries. It demonstrates fine-tuning techniques for conversational AI to better understand emotional context and deliver supportive replies. The notebook showcases the preparation of datasets, model retraining, and evaluation phases. This project serves as a learning example of applying fine-tuning to enhance AI responses in mental health support scenarios.",
         technologies: ["Python", "Gemini Flash", "Kaggle", "AI Fine-Tuning"]
+    },
+    {
+        id: "project6",
+        title: "Random Group Generator",
+        image: "ex/rng.png",
+        summary: "A web-based random name generator designed to fairly distribute participants into multiple groups with an intuitive dark-mode interface.",
+        description: "This project is a web-based Random Group Generator developed to simplify the process of randomly selecting participants and dividing them into multiple groups. The interface, as shown in the image, allows users to input participant names manually or import them directly from CSV or Excel files, making it suitable for classrooms, events, and team-based activities.\n\nThe application features a real-time random name picker (RNG) that visually highlights the selected participant and tracks the remaining number of participants. Users can specify the number of groups, generate random results one by one or all at once, and view the distribution of participants across each group. The dark-mode UI was intentionally designed to provide a modern, focused, and presentation-friendly experience.\n\nThis project demonstrates the implementation of randomization logic, dynamic state updates, file import handling, and clean UI/UX design. It serves as a practical example of building an interactive utility tool that prioritizes fairness, usability, and clarity in group management scenarios.",
+        technologies: [
+            "NextJs",
+            "Tailwind",
+            "Typescript",
+            "framer-motion",
+            "PapaParse"
+        ],
+        websiteUrl: "https://github.com/al-s999/RNG-Group-Classifier"
     }
 ];
 
@@ -116,7 +131,7 @@ function ProjectDetail({ project, onGoBack }) {
                 <div className="tech-stack">
                     {project.technologies.map(tech => <span key={tech} className="tech-item">{tech}</span>)}
                 </div>
-                <a href={project.websiteUrl} className="visit-btn" target="_blank" rel="noopener noreferrer">Go to the GitHub project</a>
+                <a href={project.websiteUrl} className="visit-btn" target="_blank" rel="noopener noreferrer">See Projects</a>
             </div>
         </div>
     );

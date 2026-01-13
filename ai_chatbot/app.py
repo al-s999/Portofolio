@@ -16,7 +16,7 @@ app = Flask(__name__)
 genai.configure(api_key=os.getenv('GOOGLE_API_KEY'))
 
 # Initialize the model
-model = genai.GenerativeModel('gemini-2.5-flash-preview-05-20')
+model = genai.GenerativeModel('gemini-2.5-flash')
 
 # Store conversation history (in production, use database)
 conversations = {}

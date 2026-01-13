@@ -2,9 +2,11 @@ import React from 'react';
 
 import mythicalCreatureImg from '../assets/ex/MythicalCreature.png';
 import biodataImg from '../assets/ex/biodata.png';
+import rngGroupGeneratorImg from '../assets/ex/rng.png';
 import authWebsiteImg from '../assets/ex/Cuplikan layar 2025-07-15 063132.png';
 import mentalHealthImg from '../assets/ex/Cuplikan layar 2025-10-09 211002.png';
 import phisingEmailImg from '../assets/ex/Cuplikan layar 2025-10-09 210947.png';
+
 
 const projectData = [
     {
@@ -31,6 +33,11 @@ const projectData = [
         img: phisingEmailImg,
         title: 'Model to Classification Phising Email',
         description: 'A model to classify phishing emails using machine learning'
+    },
+    {
+        img: rngGroupGeneratorImg,
+        title: 'Random Group Generator',
+        description: 'Web-based random name generator for grouping participants automatically, supporting name input, CSV/Excel import, and fair group distribution'
     }
 ]
 
