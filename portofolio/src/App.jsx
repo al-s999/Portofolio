@@ -20,15 +20,15 @@ function App() {
         <About />
         <Projects />
         <Resume />
-        <Contact />
         <section className="cv-cta" aria-label="Download CV">
           <a href={cvFile} download>
             <button className="cv-cta-button">Install CV</button>
           </a>
         </section>
+        <Contact />
       </main>
       <Footer />
-      <a href="http://localhost:8000" target="_blank" rel="noopener noreferrer">
+      <a href="https://portofolio-pearl-sigma.vercel.app/" target="_blank" rel="noopener noreferrer">
         <button className="chat-button"><i className="far fa-comment"></i></button>
       </a>
     </>
