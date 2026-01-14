@@ -57,7 +57,7 @@ function Projects() {
                 </div>
                 ))}
                 </div>
-                <a href="http://localhost:5174/"><button>Learn More</button></a>
+                <a href="https://projects.ahmadrosyidalfualdi.workers.dev/"><button>Learn More</button></a>
             </div>
         </section>
     )
