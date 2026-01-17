@@ -35,7 +35,8 @@ const projectsData = [
         image: "ex/Cuplikan layar 2025-10-09 210947.png",
         summary: "A prototype model to classify whether an email is phishing or legitimate using fine-tuned machine learning techniques.",
         description: "This project is a prototype built on Kaggle to classify emails as phishing or non-phishing using a fine-tuned model. It focuses on data preprocessing, feature extraction, and model training using Python libraries such as Pandas and NumPy. The model aims to enhance cybersecurity by detecting suspicious email patterns and preventing phishing attacks. The implementation demonstrates an end-to-end machine learning pipeline, including data cleaning, visualization, and model evaluation. This notebook serves as a foundation for further improvements in real-world email security applications.",
-        technologies: ["Python", "Kaggle", "Machine Learning"]
+        technologies: ["Python", "Kaggle", "Machine Learning"],
+        websiteUrl: "https://www.kaggle.com/code/ahmadrosyidalfualdi/classification-phising-email"       
     },
     {
         id: "project5",
@@ -43,7 +44,8 @@ const projectsData = [
         image: "ex/Cuplikan layar 2025-10-09 211002.png",
         summary: "A Gemini-based fine-tuned model that provides empathetic responses to users by learning from psychiatrist-patient conversation datasets.",
         description: "This project is a prototype AI model created on Kaggle using Python, retrained from the Gemini Flash model with a dataset of psychiatrist-patient dialogues. The main goal is to develop an AI assistant that can respond empathetically to mental health-related queries. It demonstrates fine-tuning techniques for conversational AI to better understand emotional context and deliver supportive replies. The notebook showcases the preparation of datasets, model retraining, and evaluation phases. This project serves as a learning example of applying fine-tuning to enhance AI responses in mental health support scenarios.",
-        technologies: ["Python", "Gemini Flash", "Kaggle", "AI Fine-Tuning"]
+        technologies: ["Python", "Gemini Flash", "Kaggle", "AI Fine-Tuning"],
+        websiteUrl: "https://www.kaggle.com/code/ahmadrosyidalfualdi/mental-health-assistant"
     },
     {
         id: "project6",
@@ -58,7 +60,7 @@ const projectsData = [
             "framer-motion",
             "PapaParse"
         ],
-        websiteUrl: "https://github.com/al-s999/RNG-Group-Classifier"
+        websiteUrl: "https://groupclassifier.ahmadrosyidalfualdi.workers.dev/"
     }
 ];
 
