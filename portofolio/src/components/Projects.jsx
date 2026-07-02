@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 import mythicalCreatureImg from '../assets/ex/MythicalCreature.png';
 import biodataImg from '../assets/ex/biodata.png';
@@ -57,7 +58,7 @@ function Projects() {
                 </div>
                 ))}
                 </div>
-                <a href="https://projects.ahmadrosyidalfualdi.workers.dev/"><button>Learn More</button></a>
+                <Link to="/projects"><button>Learn More</button></Link>
             </div>
         </section>
     )

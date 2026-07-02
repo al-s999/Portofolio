@@ -142,9 +142,9 @@ body {
 /* Header Styling */
 .header {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    padding: 15px 50px;
+    padding: 15px 8%;
     background-color: rgba(15, 15, 15, 0.95);
     position: sticky;
     top: 0;
@@ -161,10 +161,15 @@ body {
     letter-spacing: 1px;
 }
 
+.nav-links {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+}
+
 .header a {
     color: #aaa;
     text-decoration: none;
-    margin-left: 25px;
     font-weight: 500;
     transition: all 0.3s ease;
     font-size: 1.2rem;
@@ -595,14 +600,23 @@ footer .text a:hover {
     .header {
         flex-direction: column;
         padding: 15px;
+        justify-content: center;
     }
     
     .header h1 {
         margin-bottom: 15px;
+        text-align: center;
     }
     
+    .nav-links {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
     .header a {
-        margin: 5px 15px;
+        margin: 0;
     }
     
     .project-detail h2 {

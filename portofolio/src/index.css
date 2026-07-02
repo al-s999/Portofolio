@@ -103,9 +103,9 @@ body {
 /* Header Styling */
 .header {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    padding: 15px 50px;
+    padding: 15px 8%;
     background-color: rgba(15, 15, 15, 0.95);
     position: sticky;
     top: 0;
@@ -122,10 +122,15 @@ body {
     letter-spacing: 1px;
 }
 
+.nav-links {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+}
+
 .header a {
     color: #aaa;
     text-decoration: none;
-    margin-left: 25px;
     font-weight: 500;
     transition: all 0.3s ease;
     font-size: 0.9rem;
@@ -515,7 +520,7 @@ body {
 /* CV Call-to-Action */
 .cv-cta {
     max-width: 800px;
-    margin: 10px auto 0;
+    margin: 40px auto 0;
     display: flex;
     justify-content: center;
 }
@@ -913,7 +918,225 @@ footer .text a:hover {
     text-decoration: underline;
 }
 
+/* ================ Project Page CSS ================ */
+.main_container_project {
+    max-width: 1700px;
+    margin: 100px auto 50px auto;
+    padding: 30px;
+    background: #151515;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    transition: all 0.5s ease;
+    min-height: 80vh;
+}
+.index_project {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+    transition: all 0.5s ease;
+}
+div.index_project div.fade-in.visible button {
+    width: 100%;
+    height: 30px;
+}
+.project-card {
+    background: #1a1a1a;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
+}
+.project-card h3 {
+    padding: 15px;
+    font-size: 1.5rem;
+    text-align: center;
+    background: linear-gradient(45deg, #111, #333);
+    color: #fff;
+}
+.project-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+}
+.project-card p {
+    padding: 15px;
+    color: #ddd;
+    font-size: 0.95rem;
+}
+.project-card button {
+    display: block;
+    margin: 0 15px 15px;
+    padding: 10px 20px;
+    background: linear-gradient(45deg, #333, #555);
+    color: #fff;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    font-weight: 500;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+.project-card button:hover {
+    background: linear-gradient(45deg, #555, #777);
+    transform: translateY(-3px);
+}
+.detail-view {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    min-height: 600px;
+}
+.back-to-grid {
+    display: inline-block;
+    align-self: flex-start;
+    margin: 20px;
+    padding: 8px 15px;
+    background: linear-gradient(45deg, #222, #444);
+    color: #ddd;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    height: 40px;
+}
+.back-to-grid:hover {
+    background: linear-gradient(45deg, #333, #555);
+    transform: translateY(-2px);
+    color: #fff;
+}
+.project-detail {
+    animation: fadeIn 0.5s ease;
+    padding: 30px;
+}
+.project-detail h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #444;
+    padding-bottom: 15px;
+    background: linear-gradient(45deg, #ddd, #fff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.project-detail .featured-image {
+    width: 100%;
+    height: auto;
+    max-height: 500px;
+    object-fit: contain;
+    border-radius: 10px;
+    margin-bottom: 25px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    background-color: #111;
+    padding: 10px;
+}
+.project-detail .featured-image:hover {
+    cursor: pointer;
+    transform: scale(1.02);
+    transition: transform 0.3s ease;
+}
+.project-detail .project-description {
+    margin-bottom: 25px;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #ccc;
+}
+.project-detail .tech-stack {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+.project-detail .tech-item {
+    background: #333;
+    color: #ddd;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+}
+.project-detail .visit-btn {
+    display: inline-block;
+    padding: 12px 25px;
+    background: linear-gradient(45deg, #444, #666);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-top: 10px;
+    transition: all 0.3s ease;
+}
+.project-detail .visit-btn:hover {
+    background: linear-gradient(45deg, #555, #777);
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
 
+/* ================ Image Modal ================ */
+.image-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.85);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2000;
+    padding: 20px;
+    animation: fadeInModal 0.3s ease;
+    backdrop-filter: blur(5px);
+}
+
+@keyframes fadeInModal {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.image-modal-content {
+    position: relative;
+    max-width: 90%;
+    max-height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-modal-img {
+    max-width: 100%;
+    max-height: 90vh;
+    object-fit: contain;
+    border-radius: 8px;
+    box-shadow: 0 15px 50px rgba(0,0,0,0.5);
+}
+
+.image-modal-close {
+    position: absolute;
+    top: -40px;
+    right: -10px;
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 40px;
+    cursor: pointer;
+    line-height: 1;
+    text-shadow: 0 2px 5px rgba(0,0,0,0.5);
+    transition: color 0.2s;
+}
+
+.image-modal-close:hover {
+    color: #ff4757;
+}
 
 /* Responsive Design Styles */
 
@@ -960,9 +1183,16 @@ footer .text a:hover {
         text-align: center;
         margin-bottom: 15px;
     }
+
+    .nav-links {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
     
     .header a {
-        margin: 0 15px;
+        margin: 0;
         font-size: 0.85rem;
     }
     
@@ -1054,12 +1284,19 @@ footer .text a:hover {
         
         /* Ubah ke horizontal layout */
         flex-direction: row;
-        justify-content: space-around;
+        justify-content: center;
         align-items: center;
     }
     
     .header h1 {
         display: none; /* Sembunyikan judul pada header mobile untuk menghemat ruang */
+    }
+
+    .nav-links {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        gap: 0;
     }
     
     .header a {
