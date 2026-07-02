@@ -128,7 +128,7 @@ body {
     align-items: center;
 }
 
-.header a {
+.header a, .nav-btn {
     color: #aaa;
     text-decoration: none;
     font-weight: 500;
@@ -137,14 +137,19 @@ body {
     text-transform: uppercase;
     letter-spacing: 1px;
     position: relative;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-family: inherit;
+    padding: 0;
 }
 
-.header a:hover {
+.header a:hover, .nav-btn:hover {
     color: #fff;
     transform: translateY(-3px);
 }
 
-.header a::before{
+.header a::before, .nav-btn::before {
     position: absolute;
     content: "";
     bottom: -3px;
@@ -156,7 +161,7 @@ body {
     transform: translateX(-50%);
 }
 
-.header a:hover::before{
+.header a:hover::before, .nav-btn:hover::before {
     width: 100%;
 }
 
@@ -1191,7 +1196,7 @@ div.index_project div.fade-in.visible button {
         gap: 15px;
     }
     
-    .header a {
+    .header a, .nav-btn {
         margin: 0;
         font-size: 0.85rem;
     }
@@ -1299,19 +1304,19 @@ div.index_project div.fade-in.visible button {
         gap: 0;
     }
     
-    .header a {
+    .header a, .nav-btn {
         margin: 0 5px;
         font-size: 0.8rem;
         text-align: center;
     }
 
-    .header a.active {
+    .header a.active, .nav-btn.active {
         color: #fff;
         font-weight: 600;
         position: relative;
     }
     
-    .header a.active::before {
+    .header a.active::before, .nav-btn.active::before {
         content: '';
         position: absolute;
         bottom: -3px;
@@ -1418,7 +1423,7 @@ div.index_project div.fade-in.visible button {
         flex-wrap: nowrap; /* Mencegah wrapping pada layar sangat kecil */
     }
     
-    .header a {
+    .header a, .nav-btn {
         margin: 0 3px;
         font-size: 0.7rem;
         /* Tambahkan ikon untuk navigasi jika perlu */
@@ -1519,7 +1524,7 @@ div.index_project div.fade-in.visible button {
         font-size: 1.5rem;
     }
     
-    .header a {
+    .header a, .nav-btn {
         margin: 5px;
         font-size: 0.75rem;
     }
