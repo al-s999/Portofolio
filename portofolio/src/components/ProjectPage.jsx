@@ -67,7 +67,7 @@ const projectsData = [
             "framer-motion",
             "PapaParse"
         ],
-        websiteUrl: "https://groupclassifier.ahmadrosyidalfualdi.workers.dev/"
+        websiteUrl: "https://rnggroup.ahmadrosyidalfualdi.workers.dev/" 
     }
 ];
 
@@ -95,7 +95,7 @@ function ProjectGrid({ onProjectSelect }) {
     }, []); // Array kosong [] berarti efek ini hanya berjalan sekali saat komponen dimuat
 
     return (
-        <div className="index_project">
+        <div className="index_project" style={{ marginTop: "100px", minHeight: "100vh" }}>
             {projectsData.map((project) => (
                 <div className="project-card fade-in" key={project.id}>
                     <h3>{project.title}</h3>
@@ -113,7 +113,7 @@ function ProjectGrid({ onProjectSelect }) {
 function ProjectDetail({ project, onGoBack }) {
 
     const detaiViewref = useRef(null);
-    const [isModalOpen, setIsModalOpen] = useState(false);
+
 
     useEffect(() => {
         const timer = setTimeout(() => {
@@ -125,31 +125,13 @@ function ProjectDetail({ project, onGoBack }) {
         return () => clearTimeout(timer); // Cleanup timer saat komponen tidak lagi ditampilkan
     }, []);
 
-    const toggleModal = () => setIsModalOpen(!isModalOpen);
-
     return (
-        <div className="detail-view fade-in" ref={detaiViewref}>
+        <div className="detail-view fade-in" ref={detaiViewref} style={{ marginTop: "100px", minHeight: "100vh" }}>
             {/* Tombol kembali yang memanggil fungsi dari parent */}
             <button onClick={onGoBack} className="back-to-grid">← Back</button>
             <div className="project-detail">
                 <h2>{project.title}</h2>
-                <img 
-                    src={project.image} 
-                    alt={project.title} 
-                    className="featured-image" 
-                    onClick={toggleModal}
-                    style={{ cursor: "zoom-in" }}
-                />
-                
-                {isModalOpen && (
-                    <div className="image-modal-overlay" onClick={toggleModal}>
-                        <div className="image-modal-content" onClick={(e) => e.stopPropagation()}>
-                            <button className="image-modal-close" onClick={toggleModal}>&times;</button>
-                            <img src={project.image} alt={project.title} className="image-modal-img" />
-                        </div>
-                    </div>
-                )}
-
+                <img src={project.image} alt={project.title} className="featured-image" />
                 <div className="project-description">
                     {/* Memisahkan paragraf berdasarkan baris baru */}
                     {project.description.split('\n\n').map((para, index) => <p key={index}>{para}</p>)}
